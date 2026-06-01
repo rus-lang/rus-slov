@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Словарь | Современная терминология</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">{ }</span>
+                    <span class="logo-text">IT Словарь</span>
+                </h1>
+                <p class="subtitle">Полный справочник современных IT-терминов</p>
+            </div>
+        </header>
+
+        <!-- Search and Filter -->
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Поиск по терминам..." class="search-input">
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">
+                    Все <span class="count" id="count-all">0</span>
+                </button>
+                <button class="filter-btn" data-category="programming">
+                    💻 Программирование <span class="count" id="count-programming">0</span>
+                </button>
+                <button class="filter-btn" data-category="systems">
+                    ⚙️ Системы <span class="count" id="count-systems">0</span>
+                </button>
+                <button class="filter-btn" data-category="networks">
+                    🌐 Сети <span class="count" id="count-networks">0</span>
+                </button>
+                <button class="filter-btn" data-category="security">
+                    🔒 Безопасность <span class="count" id="count-security">0</span>
+                </button>
+                <button class="filter-btn" data-category="devops">
+                    🚀 DevOps <span class="count" id="count-devops">0</span>
+                </button>
+                <button class="filter-btn" data-category="slang">
+                    💬 Сленг <span class="count" id="count-slang">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Terms Grid -->
+        <div class="terms-grid" id="termsGrid">
+            <!-- Terms will be inserted here by JavaScript -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 IT Словарь • Создано для изучения IT-терминологии</p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
